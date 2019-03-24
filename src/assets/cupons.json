@@ -1,0 +1,48 @@
+{
+  "user": {
+    "name_user": "Rick827"
+  },
+  "cupons": [
+    {
+      "active": [
+        {
+          "title": "50 FREE SPINS ON GEMIX TO USE NOW",
+          "titleBotton": "PLAY BINGO",
+          "status": "active",
+          "icon": "fas fa-check"
+        },
+        {
+          "title": "50 FREE SPINS ON GEMIX TO USE NOW",
+          "titleBotton": "PLAY SLOTS",
+          "status": "active",
+          "icon": "fas fa-check"
+        }
+      ]
+    },
+    {
+      "timeOut": [
+        {
+          "title": "1ST DEPOSIT OFFER 300% BINGO BONUS +100 FREE SPINS",
+          "titleBotton": "DEPOSIT TO CLAIM",
+          "status": "active",
+          "icon": "fas fa-clock"
+        },
+        {
+          "title": "1ST DEPOSIT OFFER 100% SLOTS BONUS",
+          "titleBotton": "DEPOSIT TO CLAIM",
+          "status": "active",
+          "icon": "fas fa-clock"
+        }
+      ]
+    },
+    {
+      "out": [
+        {
+          "title": "2ND DEPOSIT OFFER 150% BINGO BONUS",
+          "status": "out",
+          "icon": "fas fa-lock"
+        }
+      ]
+    }
+  ]
+}

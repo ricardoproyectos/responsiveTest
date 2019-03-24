@@ -1,0 +1,49 @@
+<div class="container-fluid">
+  <div class="nabvar">
+    <span class="col-md-11 col-11 welcomeTittle"> Welcome {{ nameUser }} , thanks for joining.</span>
+    <span class="col-md-1 col-1 close">X</span>
+  </div>
+  <div class="col-lg-4 offset-lg-4 col-md-8 offset-md-2 col-12">
+    <span class="textTitle">2 BONUSES FOR YOU TO USE NOW</span>
+  </div>
+  <div class="row">
+    <div class="cuponsGral col-lg-3  offset-lg-2 col-md-5 offset-md-1 col-10 offset-1" *ngFor="let item of active.active">
+      <div class="containbutton col-md-10 col-10">
+        <span class="tittleCupons text-center">{{ item.title }}</span>
+        <button class="btn btn-success btnCustom">{{ item.titleBotton }} </button>
+      </div>
+      <div class="containIcon col-md-2 col-2">
+        <i class="iconCustomCheck {{item.icon}}" [ngClass]="item.active == 'active' ? 'iconCustomCheck': '' "></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 offset-lg-4 col-md-8 offset-md-2">
+    <span class="textTitle">ALSO PICK 1 OF 2 DEPOSIT OFFERS</span>
+  </div>
+  <div class="row">
+    <div class="cuponsGral col-lg-3  offset-lg-2 col-md-5 offset-md-1 col-10 offset-1 " *ngFor="let item of timeout.timeOut">
+      <div class="containbutton col-md-10 col-10">
+        <span class="tittleCupons">{{ item.title }}</span>
+        <button class="btn btn-success btnCustom2">{{ item.titleBotton }}</button>
+      </div>
+      <div class="containIcon2 col-md-2 col-2">
+        <i class="iconCustomTime {{item.icon}}" [ngClass]="item.active == 'active' ? 'iconCustomTime': '' "></i>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+      <div class="cuponsGralDisabled col-lg-3  offset-lg-2 col-md-5 offset-md-1 col-10 offset-1 " *ngFor="let item of out.out">
+        <div class="containbutton col-md-10 col-10">
+          <span class="tittleCuponsDisabled">{{ item.title }}</span>
+        </div>
+        <div class="containIcon3 col-md-2 col-2">
+          <i class="iconCustomOut {{item.icon}}" [ngClass]="item.active == 'out' ? 'iconCustomOut': '' "></i>
+        </div>
+      </div>
+    </div>
+
+
+
+</div>
